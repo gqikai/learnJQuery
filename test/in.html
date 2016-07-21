@@ -3,54 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-</head>
-<style>
-    .zoomPic {
-        margin: 30px;
-        width: 300px;
-        height: 180px;
-        background-color: blue;
-        background-image: url(http://placehold.it/1200x720);
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        background-size: 300px 180px;
-
-        -webkit-transition: all 2.5s ease-in-out;
-        -moz-transition: all 2.5s ease-in-out;
-        -ms-transition: all 2.5s ease-in-out;
-        -o-transition: all 2.5s ease-in-out;
-        transition: all 2.5s ease-in-out;
-    }
-
-    .zoomPic.zoom {
-        background-size: 1200px 720px !important;
-    }
-</style>
-<body>
-<h3>Pure Javascript</h3>
-<div class="zoomPic"></div>
-<button class='zoom'>Zoom</button>
-<button class='pause'>Pause</button>
-<button class='zoomout'>Zoom Out</button>
-<script>
-    var zoomOne = document.getElementsByClassName('zoomPic')[0],
-            zoomOneBGSize = window.getComputedStyle(zoomOne).getPropertyValue('background-size');
-
-    document.getElementsByClassName('zoom')[0].onclick = function () {
-        if (!zoomOne.classList.contains('zoom')) {
-            zoomOne.classList.add('zoom');
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            float: left;
         }
-    }
-    document.getElementsByClassName('pause')[0].onclick = function () {
-        var computedStyle = window.getComputedStyle(zoomOne),
-                backgroundSize = computedStyle.getPropertyValue('background-size');
-        zoomOne.style.backgroundSize = backgroundSize;
-        zoomOne.classList.remove('zoom');
-    }
-    document.getElementsByClassName('zoomout')[0].onclick = function () {
-        zoomOne.classList.remove('zoom');
-        zoomOne.style.backgroundSize = zoomOneBGSize;
-    }
-</script>
+    </style>
+</head>
+<body>
+<div>1</div>
+<div>2</div>
+<div>3</div>
 </body>
 </html>
