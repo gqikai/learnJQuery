@@ -1,24 +1,45 @@
-<!DOCTYPE HTML>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>img - complete attribute</title>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .boxBg{
+            margin: 0 auto;
+            width:500px;
+            height:200px;
+            border:2px solid #ccc;
+        }
+        .box1{
+            width:100px;
+            height:50px;
+            background-color:red;
+            float:left
+        }
+        .box2{
+            width:100px;
+            height:50px;
+            background-color:blue;
+            float:left
+        }
+        .box3{
+            width:100px;
+            height:50px;
+            background-color:green;
+        }
+    </style>
 </head>
 <body>
-<img id="img1" src="http://pic1.win4000.com/wallpaper/f/51c3bb99a21ea.jpg">
-<p id="p1">loading...</p>
-<script type="text/javascript">
-    function imgLoad(img, callback) {
-        var timer = setInterval(function() {
-            if (img.complete) {
-                callback(img)
-                clearInterval(timer)
-            }
-        }, 50)
-    }
-    imgLoad(img1, function() {
-        p1.innerHTML = '加载完毕'
-    })
-</script>
+<div class="boxBg">
+    <div class="box1">
+        框框1
+    </div>
+    <div class="box2">
+        框框2
+    </div>
+    <div class="box3">
+        框框3
+    </div>
+</div>
 </body>
 </html>

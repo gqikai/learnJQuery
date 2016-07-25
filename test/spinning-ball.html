@@ -1,35 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <style>
-        .main,.sitebar {
-            height: 300px;
-            font: bolder 20px/300px '微软雅黑';
-            color: #fff;
-            text-align: center;
-        }
-        .main {
-            width: 100%;
-            float: left;
-        }
-        .main .content {
-            margin-left: 200px;
-            background-color: red;
-        }
-        .sitebar {
-            width: 200px;
-            float: left;
-            margin-left: -100%;
-            background-color: green;
-        }
+    <title></title>
+    <style type="text/css" rel="stylesheet">
+        .image img{width:50px; height:50px; position:absolute;}
+        .content{ margin-left:70px;}
     </style>
 </head>
 <body>
-<div class="main">
-    <div class="content">右侧主体自适应区块</div>
-</div>
-<div class="sitebar">左侧定宽200px区块</div>
+<div style=" width:600px; height:200px; border:1px solid #000; margin-left:200px;">
+    <div class="image"> <img src="test.jpg" alt="testPic" title="testPic"/></div>
+    <div class="content">
+        <dl>
+            <dt>Name:</dt>
+            <dd>Doudou</dd>
+            <dt>Sex:</dt>
+            <dd>Boy</dd>
+            <dt>Habit:</dt>
+            <dd>Footabll,Piano</dd>
+        </dl>
+        <div/>
+    </div>
 </body>
 </html>
