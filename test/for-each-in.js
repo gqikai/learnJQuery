@@ -1,8 +1,14 @@
-var a = function() {
-    console.log('a');
+var model = {
+    func : function() {
+        console.log('hell');
+    },
+    obj: {
+        hell: 'helll'
+    },
+    arr: ['hello','helll']
 }
-function b() {
-    console.log('b');
-}
-console.log(a.prototype.constructor);//[Function]
-console.log(b.prototype.constructor);//[Function: b]
+
+var copy = JSON.parse(JSON.stringify(model));
+
+console.log(JSON.stringify(model));
+console.log(copy);
