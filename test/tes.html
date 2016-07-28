@@ -1,45 +1,63 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--The viewport meta tag is used to improve the presentation and behavior of the samples
+      on iOS devices-->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
+    <title></title>
+
     <style>
-        .boxBg{
-            margin: 0 auto;
-            width:500px;
-            height:200px;
-            border:2px solid #ccc;
+        html, body { height: 100%; width: 100%; margin: 0; padding: 0; }
+        .left{
+            background:pink;
+            float: left;
+            width:180px;
         }
-        .box1{
-            width:100px;
-            height:50px;
-            background-color:red;
-            float:left
+        .center{
+            background:lightyellow;
+            overflow:hidden;
+
         }
-        .box2{
-            width:100px;
-            height:50px;
-            background-color:blue;
-            float:left
-        }
-        .box3{
-            width:100px;
-            height:50px;
-            background-color:green;
+        .right{
+            background: lightblue;
+            width:180px;
+            float:right;
         }
     </style>
+
+
 </head>
-<body>
-<div class="boxBg">
-    <div class="box1">
-        框框1
+
+<body class="claro">
+<div class="container">
+    <div class="left">
+      <pre>
+  .left{
+    background:pink;
+    float: left;
+    width:180px;
+  }
+      </pre>
     </div>
-    <div class="box2">
-        框框2
+    <div class="right">
+       <pre>
+  .right{
+    background:lightblue;
+    width:180px;
+    float:right;
+  }
+      </pre>
     </div>
-    <div class="box3">
-        框框3
+    <div class="center">
+    <pre>
+  .center{
+    background:lightyellow;
+    overflow:hidden;
+    height:116px;
+  }
+      </pre>
     </div>
 </div>
-</body>
+
 </html>
